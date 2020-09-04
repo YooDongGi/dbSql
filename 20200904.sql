@@ -194,3 +194,21 @@ FROM emp;
 
 SELECT ROWNUM, e.*
 FROM emp e;
+
+실습 WHERE 11]
+SELECT * FROM emp
+WHERE job = 'SALESMAN' OR hiredate >= TO_DATE('19810601','yyyymmdd');
+
+실습 WHERE 12]
+SELECT * FROM emp
+WHERE job = 'SALESMAN' OR empno LIKE'78%';
+
+실습 WHERE 13]
+SELECT * FROM emp
+WHERE job = 'SALESMAN' OR empno BETWEEN 7800 AND 7899;
+
+실습 WHERE 14]
+SELECT * FROM emp
+WHERE job = 'SALESMAN' OR empno LIKE'78%'
+    AND hiredate >= TO_DATE('19810601','yyyymmdd');
+
