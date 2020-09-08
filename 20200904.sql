@@ -15,7 +15,7 @@ EX : emp 테이블에는 comm컬럼의 값이 NULL인 데이터가 존재
 comm이 NULL인 데이터를 조회하기 위해 다음과 같이 실행할 경우 정상적으로 동작하지 않음
 SELECT * FROM emp WHERE comm = NULL;
 SELECT * FROM emp WHERE comm IS NULL;
-SELECT * FROM emp WHERE comm IS NOT NULL; // NULL이 아닌 데이터 조회
+SELECT * FROM emp WHERE comm IS NOT NULL; -- NULL이 아닌 데이터 조회
 
 사원 중 소속 부서가 10번이 아닌 사원 조회
 SELECT * FROM emp WHERE deptno NOT IN (10);
@@ -114,7 +114,8 @@ ORDER BY enm;
 
 2. ORDER BY 절에 SELECT 절의 컬럼 순서번호를 기술 하여 정렬 가능
 SELECT empno, ename FROM emp
-ORDER BY 2; ==> ORDER BY ename
+ORDER BY 2; 
+==> ORDER BY ename
 
 3. expression도 가능
 SELECT empno, ename, sal + 500
