@@ -254,7 +254,7 @@ HAVING COUNT(deptno) IS NOT NULL;
 실습 join0 ]
 SELECT e.empno, e.ename, e.deptno, d.dname
 FROM emp e, dept d
-WHERE e.deptno = d.deptno
+WHERE e.deptno = d.deptno 
 ORDER BY deptno;
 
 실습 join0_1 ]
